@@ -1,0 +1,111 @@
+@font-face
+  font-family: 'Prohibition'
+  src: url('fonts/Prohibition.eot')
+  src: url('fonts/Prohibition.eot?#iefix') format('embedded-opentype'), url('fonts/Prohibition.woff2') format('woff2'), url('fonts/Prohibition.woff') format('woff'), url('fonts/Prohibition.ttf')  format('truetype')
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  background: #ffedef url('/assets/images/banner.png') no-repeat center top
+  background-size: cover
+  font: 36px Prohibition, sans-serif
+
+section
+  padding: 25px 50px
+  min-height: 95vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  overflow: scroll
+  -webkit-overflow-scrolling: touch
+
+header
+  display: flex
+  align-items: center
+  flex: 1
+  flex-direction: column
+  justify-content: center
+
+  img
+    width: 300px
+    max-width: 75%
+
+    @media (max-width: 768px), (max-height: 700px)
+      width: 200px
+
+  h1
+    position: relative
+    margin: 10px 0 0
+    color: darken(#c80b00, 25%)
+    font-weight: 100
+
+    &::after
+      top: 1px
+      right: 0
+      bottom: 0
+      left: 1px
+      position: absolute
+      display: block
+      content: 'RHABBYV'
+      color: #c80b00
+
+nav
+  padding: 20px 0
+  min-height: min-content
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: center
+
+  $buttonHeight: 5px
+
+  a
+    margin: 20px
+    padding: 20px 40px
+    min-width: 320px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: repeat center center
+    background-image: url('/assets/images/button.png')
+    background-size: cover
+    color: white
+    font: 36px Prohibition, sans-serif
+    font-weight: 100
+    text-decoration: none
+
+    @media (max-width: 1024px)
+      padding: 20px
+      min-width: 250px
+      flex: 1 1 40%
+
+    svg
+      margin-right: 10px
+
+  .followers
+    margin-left: 5px
+    padding: 2px 7px 4px
+    display: inline-block
+    background: rgba(0,0,0,0.4)
+    border-top: 1px solid rgba(0,0,0,0.25)
+    border-radius: inherit
+    font-size: 0.6em
+    text-shadow: 0 1px 0 rgba(0,0,0,0.25)
+
+footer
+  padding: 20px 0 0
+  font: 16px 'Source Sans Pro', sans-serif
+
+  &, *
+    color: rgba(0,0,0,0.25)
+    text-align: center
+    text-decoration: none
+    transition: color 200ms ease
+
+  a:hover
+    color: rgba(0,0,0,0.5)

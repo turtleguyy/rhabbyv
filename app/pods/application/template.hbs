@@ -1,0 +1,53 @@
+<section>
+  <header>
+    <img src="/assets/images/logo.png" alt="Datto">
+    <h1>RHABBYV</h1>
+  </header>
+
+  <nav>
+    <a class="twitch" href="https://www.instagram.com/rhabby_v/">
+      {{fa-icon "instagram"}}
+      Instagram
+      {{#if this.model.instagram}}
+        <span class="followers">
+          {{number-shortener this.model.instagram}}
+        </span>
+      {{/if}}
+    </a>
+
+    <a class="twitch" href="https://www.twitch.tv/rhabby_v">
+      {{fa-icon "twitch"}}
+      Twitch
+      {{#if this.model.twitch}}
+        <span class="followers">
+          {{number-shortener this.model.twitch}}
+        </span>
+      {{/if}}
+    </a>
+
+    <a class="twitter" href="https://twitter.com/rhabby_v">
+      {{fa-icon "twitter"}}
+      Twitter
+      {{#if this.model.twitter}}
+        <span class="followers">
+          {{number-shortener this.model.twitter}}
+        </span>
+      {{/if}}
+    </a>
+
+    <a class="youtube" href="https://www.youtube.com/user/ilovemlg1/">
+      {{fa-icon "youtube"}}
+      YouTube
+      {{#if this.model.youtube}}
+        <span class="followers">
+          {{number-shortener this.model.youtube}}
+        </span>
+      {{/if}}
+    </a>
+  </nav>
+
+  <footer>
+    Lovingly created by
+    <a href="https://turtleguyy.com/" target="_blank" rel="noopener">@turtleguyy</a> for the saltiest man I know.
+  </footer>
+</section>
