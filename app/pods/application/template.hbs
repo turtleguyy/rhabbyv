@@ -44,6 +44,16 @@
         </span>
       {{/if}}
     </a>
+    
+    <a class="tiktok" href="https://www.tiktok.com/@rhabbyv">
+      {{fa-icon "tiktok"}}
+      TikTok
+      {{#if this.model.tiktok}}
+        <span class="followers">
+          {{number-shortener this.model.tiktok}}
+        </span>
+      {{/if}}
+    </a>
   </nav>
 
   <footer>
