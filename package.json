@@ -20,11 +20,12 @@
   "devDependencies": {
     "@ember/jquery": "^0.5.2",
     "@ember/optional-features": "^0.6.3",
-    "@fortawesome/ember-fontawesome": "^0.2.1",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/ember-fontawesome": "^0.4.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@glimmer/component": "^1.0.0",
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^4.0.1",
-    "ember-browserify": "^1.2.2",
+    "ember-auto-import": "^2.6.0",
     "ember-cli": "~3.8.1",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^7.1.2",
@@ -40,7 +41,7 @@
     "ember-cli-uglify": "^2.1.0",
     "ember-data": "~3.8.0",
     "ember-export-application-global": "^2.0.0",
-    "ember-fetch": "^6.7.1",
+    "ember-fetch": "^8.0.2",
     "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-qunit": "^3.4.1",
@@ -51,10 +52,13 @@
     "loader.js": "^4.7.0",
     "qunit-dom": "^0.8.0",
     "sass": "^1.23.0",
-    "twit": "^2.2.11"
+    "twit": "^2.2.11",
+    "webpack": "^5.75.0"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
   },
-  "dependencies": {}
+  "resolutions": {
+    "whatwg-fetch": "3.3.1"
+  }
 }
